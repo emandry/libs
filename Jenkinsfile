@@ -17,7 +17,7 @@ pipeline
                     //def findFilesValue = findFiles("vars",".groovy$")
                     def findFilesValue = listFiles(".","*")
                     println "Find Files Returned: " + findFilesValue
-                    println "Find Files Returned: " + findFilesValue.size
+                    println "Find Files Returned: " + findFilesValue.count()
                     print "fin nuevo codigo"
                 }
                 sh 'echo "adios"'
