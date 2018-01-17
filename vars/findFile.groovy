@@ -10,5 +10,5 @@
 */
 def call(String dir, String searchPattern = '.json$', boolean recursive = true) {
   def globValue = "'" + "${dir}" + "/**/**'"
-  return findFiles(glob: evaluate("${globValue}")).findAll { it.name =~ ~searchPattern }.collect { it.getPath() }
+  return findFile(glob: evaluate("${globValue}")).findAll { it.name =~ ~searchPattern }.collect { it.getPath() }
 }
