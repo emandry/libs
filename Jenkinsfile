@@ -15,7 +15,7 @@ pipeline
                     print "nates de"
                     print "antes nuevo codigo"
                     //def findFilesValue = findFiles("vars",".groovy$")
-                    def findFilesValue = listFiles(".",".*")
+                    def findFilesValue = listFiles("vars",".groovy$")
                     println "Find Files Returned: " + findFilesValue
                     //println "Find Files Returned: " + findFilesValue.lenght()
                     print "fin nuevo codigo"
