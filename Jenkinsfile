@@ -14,7 +14,8 @@ pipeline
                     valor2=1 //new File(path+"/builds").eachFileRecurse().size
                     print "nates de"
                     print "antes nuevo codigo"
-                    def findFilesValue = findFiles("vars",".groovy$")
+                    //def findFilesValue = findFiles("vars",".groovy$")
+                    def findFilesValue = findFiles("vars")
                     print "Find Files Returned: " + findFilesValue
                     print "fin nuevo codigo"
                 }
